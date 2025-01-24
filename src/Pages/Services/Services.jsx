@@ -104,7 +104,7 @@ export default function Services() {
 
     return <>
         <div className='lg:px-24 px-8 my-12 space-y-10'>
-        <h2 class="text-primary lg:text-3xl text-2xl font-bold">{t('Navbar.services')}</h2>
+        <h2 className="text-primary lg:text-3xl text-2xl font-bold">{t('Navbar.services')}</h2>
         <p>{t('services.a')}</p>
         <div className="flex flex-col rounded-2xl bg-gradient-to-t from-[#3f6d858a] to-[#2897ce00]">
             <div className="grid lg:grid-cols-4 grid-cols-2 lg:gap-8 gap-4 lg:px-16 px-4">

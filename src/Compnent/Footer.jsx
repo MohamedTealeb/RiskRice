@@ -7,26 +7,26 @@ export default function Footer() {
   return <>
   <div className='bg-primary lg:px-24 px-8 mt-8 py-6 text-white rounded-t-lg'>
 <div className='grid lg:grid-cols-5 grid-cols-1 gap-4' >
-<div class="flex lg:col-span-2 flex-col lg:justify-start lg:items-start justify-center items-center space-y-4 w-full">
-    <img src={logo} class="w-36"/>
-    <p class="text-white lg:block text-sm hidden w-2/3">{t('footer.a')}</p> </div>
-    <div class="lg:flex flex-col  hidden space-y-2">
-        <h2 class="font-bold">{t('Navbar.services')}</h2>
-        <a class="hover:underline hover:text-secondary underline-offset-4" href="/services" data-discover="true">{t('footer.b')}</a>
-        <a class="hover:underline hover:text-secondary underline-offset-4" href="/services" data-discover="true">{t('footer.c')}</a>
-        <a class="hover:underline hover:text-secondary underline-offset-4" href="/services" data-discover="true">{t('footer.d')}</a>
-        <a class="hover:underline hover:text-secondary underline-offset-4" href="/services" data-discover="true">{t('footer.e')}</a>
+<div className="flex lg:col-span-2 flex-col lg:justify-start lg:items-start justify-center items-center space-y-4 w-full">
+    <img src={logo} className="w-36"/>
+    <p className="text-white lg:block text-sm hidden w-2/3">{t('footer.a')}</p> </div>
+    <div className="lg:flex flex-col  hidden space-y-2">
+        <h2 className="font-bold">{t('Navbar.services')}</h2>
+        <a className="hover:underline hover:text-secondary underline-offset-4" href="/services" data-discover="true">{t('footer.b')}</a>
+        <a className="hover:underline hover:text-secondary underline-offset-4" href="/services" data-discover="true">{t('footer.c')}</a>
+        <a className="hover:underline hover:text-secondary underline-offset-4" href="/services" data-discover="true">{t('footer.d')}</a>
+        <a className="hover:underline hover:text-secondary underline-offset-4" href="/services" data-discover="true">{t('footer.e')}</a>
         </div>
         <div className='flex flex-col lg:justify-start lg:items-start justify-center items-center  space-y-1'>
-        <h2 class="font-bold ">{t('footer.f')}</h2>
+        <h2 className="font-bold ">{t('footer.f')}</h2>
         <div className='flex  lg:flex-col justify-start items-start lg:gap-2 gap-4 lg:ms-0 ms-4 '>
-        <a class="hover:underline hover:text-secondary underline-offset-4" href="/about" data-discover="true">{t('footer.g')}</a>
-        <a class="hover:underline hover:text-secondary underline-offset-4" href="/services" data-discover="true">{t('Navbar.services')}</a>
+        <a className="hover:underline hover:text-secondary underline-offset-4" href="/about" data-discover="true">{t('footer.g')}</a>
+        <a className="hover:underline hover:text-secondary underline-offset-4" href="/services" data-discover="true">{t('Navbar.services')}</a>
         </div>
       
         </div>
         <div className='flex flex-col lg:justify-start lg:items-start justify-center items-center  space-y-4'>
-        <h2 class="font-bold">{t('footer.q')}</h2>
+        <h2 className="font-bold">{t('footer.q')}</h2>
         <div className="flex gap-4">
             <a href="" target="_blank" rel="noopener noreferrer">
                 <svg className="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge rounded-full p-1 text-primary my-2 w-8 h-8 bg-white" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="FacebookRoundedIcon">

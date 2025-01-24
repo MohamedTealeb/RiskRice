@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import logo from '../assets/logo-DHkhB3YR.png'
-import { Link, useLocation } from 'react-router-dom';
+import {  useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import Cookies from 'js-cookie';
@@ -29,33 +29,33 @@ window.document.dir =i18n.dir()
   return <>
    <Helmet>
   <title>RiskRice</title>
-  <link rel="shortcut icon" href={logo} type="image/svg+xml" />
+  <a rel="shortcut icon" href={logo} type="image/svg+xml" />
 </Helmet>
-  <section class="relative mx-auto  bg-primary ">
+  <section className="relative mx-auto  bg-primary ">
     
-    <nav class="flex justify-around  w-screen overflow-hidden">
-      <div class="px-5 xl:px-12 py-6 flex w-full  items-center">
-        <a class="text-3xl font-bold font-heading" href="#">
-         <img class="h-9" src={logo} alt="logo"/>
-         
-        </a>
+    <nav className="flex justify-around  w-screen overflow-hidden">
+      <div className="px-5 xl:px-12 py-6 flex w-full  items-center">
+        <a className="text-3xl font-bold font-heading" href="#">
+         <img className="h-9" src={logo} alt="logo"/>
+         </a>
+        
        
         <ul className="hidden md:flex  mx-auto  font-semibold   gap-5 ">
         <li>
-                <Link className={`text-md font-bold duration-300 ${location.pathname === '/home' ? 'text-secondary  underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4`} to="/home">{t('Navbar.home')}</Link>
+                <a className={`text-md font-bold duration-300 ${location.pathname === '/home' ? 'text-secondary  underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4`} to="/home">{t('Navbar.home')}</a>
               </li>
               <li>
-                <Link className={`text-md font-bold duration-300 ${location.pathname === '/services' ? 'text-secondary underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4 gap-2`} to="/services">{t('Navbar.services')}</Link>
+                <a className={`text-md font-bold duration-300 ${location.pathname === '/services' ? 'text-secondary underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4 gap-2`} to="/services">{t('Navbar.services')}</a>
               </li>
           <li>
-                <Link className={`text-md font-bold duration-300 ${location.pathname === '/about' ? 'text-secondary underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4`} to="/about">{t('Navbar.about')}</Link>
+                <a className={`text-md font-bold duration-300 ${location.pathname === '/about' ? 'text-secondary underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4`} to="/about">{t('Navbar.about')}</a>
               </li>
           
          
         </ul>
        
-        <div class="hidden md:flex lg:flex xl:flex items-center  space-x-5 ">
-        <a class="text-black bg-secondary  focus:ring-4 focus:outline-none font-bold rounded-lg me-6 text-md px-4 py-2"  href="/contact" data-discover="true">{t('Navbar.contact')}</a>
+        <div className="hidden md:flex lg:flex xl:flex items-center  space-x-5 ">
+        <a className="text-black bg-secondary  focus:ring-4 focus:outline-none font-bold rounded-lg me-6 text-md px-4 py-2"  href="/contact" data-discover="true">{t('Navbar.contact')}</a>
 
         {i18n.language === 'en' ? (
           <button className='text-white font-semibolde' onClick={() => changeLanguage('ar')}>{t('Navbar.language.arabic')}</button> // Show Arabic button
@@ -87,9 +87,9 @@ window.document.dir =i18n.dir()
 
                 <div className="absolute text-center top-16 left-0 w-full bg-primary text-white md:hidden">
                   
-                    <Link to="/" className="block font-medium text-lg px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.home')}</Link>
-                    <Link to="/services" className="block font-medium  px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.services')}</Link>
-                    <Link to="/about" className="block font-medium px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.about')}</Link>
+                    <a to="/" className="block font-medium text-lg px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.home')}</a>
+                    <a to="/services" className="block font-medium  px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.services')}</a>
+                    <a to="/about" className="block font-medium px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.about')}</a>
                    
                    <div class="p-4 flex items-center   hover:bg-gray-700 justify-center space-x-2">
                     
