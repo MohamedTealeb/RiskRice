@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import Cookies from 'js-cookie';
+import { Helmet } from 'react-helmet';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false); 
@@ -26,7 +27,10 @@ window.document.dir =i18n.dir()
 
  
   return <>
-   
+   <Helmet>
+  <title>RiskRice</title>
+  <link rel="shortcut icon" href={logo} type="image/svg+xml" />
+</Helmet>
   <section class="relative mx-auto  bg-primary ">
     
     <nav class="flex justify-around  w-screen overflow-hidden">

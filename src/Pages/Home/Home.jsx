@@ -5,6 +5,9 @@ import photo1 from './../../assets/whoarewe-btaxIWyK.png'
 import download from './../../assets/download-DB5ja-F-.png'
 import Footer from '../../Compnent/Footer';
 import { useTranslation } from 'react-i18next';
+import { Helmet } from 'react-helmet';
+import logo from './../../assets/logo-DHkhB3YR.png' 
+
 
 
 
@@ -12,7 +15,10 @@ export default function Home() {
   const { t, i18n } = useTranslation();
   return <>
   
-
+  <Helmet>
+                <title>RiskRice</title>
+                <link rel="shortcut icon" href={logo} type="image/svg+xml" />
+            </Helmet>
    
 <div className="flex bg-primary ">
   <div className="flex flex-col-reverse lg:flex-row my-12 lg:px-24 px-4 text-white lg:gap-24 gap-2">
