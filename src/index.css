@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   
+}
+:root {
+    --primary-color: #032e43;
+    --secondary-color: #a9d12b;
+  }
+  .bg-primary {
+    background-color: var(--primary-color);
+}
+  .bg-secondary {
+    background-color: var(--secondary-color);
+}
+.text-secondary {
+    color: var(--secondary-color);
+}
+.text-primary {
+    color: var(--primary-color);
+}
+
+
+body[dir="rtl"] {
+    text-align: right; /* Align text to the right for RTL */
+}
+
