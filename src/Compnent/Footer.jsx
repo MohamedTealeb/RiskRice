@@ -13,10 +13,10 @@ export default function Footer() {
     <p className="text-white lg:block text-sm hidden w-2/3">{t('footer.a')}</p> </div>
     <div className="lg:flex flex-col  hidden space-y-2">
         <h2 className="font-bold">{t('Navbar.services')}</h2>
-        <a className="hover:underline hover:text-secondary underline-offset-4" href="/services" data-discover="true">{t('footer.b')}</a>
-        <a className="hover:underline hover:text-secondary underline-offset-4" href="/services" data-discover="true">{t('footer.c')}</a>
-        <a className="hover:underline hover:text-secondary underline-offset-4" href="/services" data-discover="true">{t('footer.d')}</a>
-        <a className="hover:underline hover:text-secondary underline-offset-4" href="/services" data-discover="true">{t('footer.e')}</a>
+        <Link className="hover:underline hover:text-secondary underline-offset-4" to="/services" data-discover="true">{t('footer.b')}</Link>
+        <Link className="hover:underline hover:text-secondary underline-offset-4" to="/services" data-discover="true">{t('footer.c')}</Link>
+        <Link className="hover:underline hover:text-secondary underline-offset-4" to="/services" data-discover="true">{t('footer.d')}</Link>
+        <Link className="hover:underline hover:text-secondary underline-offset-4" to="/services" data-discover="true">{t('footer.e')}</Link>
         </div>
         <div className='flex flex-col lg:justify-start lg:items-start justify-center items-center  space-y-1'>
         <h2 className="font-bold ">{t('footer.f')}</h2>
