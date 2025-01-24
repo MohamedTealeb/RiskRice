@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import logo from '../assets/logo-DHkhB3YR.png'
-import {  useLocation } from 'react-router-dom';
+import {  Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import i18next from 'i18next';
 import Cookies from 'js-cookie';
@@ -38,24 +38,23 @@ window.document.dir =i18n.dir()
         <a className="text-3xl font-bold font-heading" href="#">
          <img className="h-9" src={logo} alt="logo"/>
          </a>
-        
        
         <ul className="hidden md:flex  mx-auto cursor-pointer font-semibold   gap-5 ">
         <li>
-                <a className={`text-md font-bold duration-300 ${location.pathname === '/home' ? 'text-secondary  underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4`} href="/home">{t('Navbar.home')}</a>
+                <Link className={`text-md font-bold duration-300 ${location.pathname === '/home' ? 'text-secondary  underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4`} to="/home">{t('Navbar.home')}</Link>
               </li>
               <li>
-                <a className={`text-md font-bold duration-300 ${location.pathname === '/services' ? 'text-secondary underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4 gap-2`} href="/services">{t('Navbar.services')}</a>
+                <Link className={`text-md font-bold duration-300 ${location.pathname === '/services' ? 'text-secondary underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4 gap-2`} to="/services">{t('Navbar.services')}</Link>
               </li>
           <li>
-                <a className={`text-md font-bold duration-300 ${location.pathname === '/about' ? 'text-secondary underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4`} href="/about">{t('Navbar.about')}</a>
+                <Link className={`text-md font-bold duration-300 ${location.pathname === '/about' ? 'text-secondary underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4`} to="/about">{t('Navbar.about')}</Link>
               </li>
           
          
         </ul>
        
         <div className="hidden md:flex lg:flex xl:flex items-center  space-x-5 ">
-        <a className="text-black bg-secondary  focus:ring-4 focus:outline-none font-bold rounded-lg me-6 text-md px-4 py-2"  href="/contact" data-discover="true">{t('Navbar.contact')}</a>
+        <Link className="text-black bg-secondary  focus:ring-4 focus:outline-none font-bold rounded-lg me-6 text-md px-4 py-2"  to="/contact" data-discover="true">{t('Navbar.contact')}</Link>
 
         {i18n.language === 'en' ? (
           <button className='text-white font-semibolde' onClick={() => changeLanguage('ar')}>{t('Navbar.language.arabic')}</button> // Show Arabic button
@@ -87,9 +86,9 @@ window.document.dir =i18n.dir()
 
                 <div className="absolute text-center top-16 left-0 w-full bg-primary text-white md:hidden">
                   
-                    <a to="/" className="block font-medium text-lg px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.home')}</a>
-                    <a to="/services" className="block font-medium  px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.services')}</a>
-                    <a to="/about" className="block font-medium px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.about')}</a>
+                    <Link to="/" className="block font-medium text-lg px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.home')}</Link>
+                    <link to="/services" className="block font-medium  px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.services')}</link>
+                    <link to="/about" className="block font-medium px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.about')}</link>
                    
                    <div class="p-4 flex items-center   hover:bg-gray-700 justify-center space-x-2">
                     
