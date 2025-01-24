@@ -20,7 +20,7 @@ export default function Footer() {
         <div className='flex flex-col lg:justify-start lg:items-start justify-center items-center  space-y-1'>
         <h2 className="font-bold ">{t('footer.f')}</h2>
         <div className='flex  lg:flex-col justify-start items-start lg:gap-2 gap-4 lg:ms-0 ms-4 '>
-        <a className="hover:underline hover:text-secondary underline-offset-4" href="/about" data-discover="true">{t('footer.g')}</a>
+        <a className="hover:underline hover:text-secondary underline-offset-4"  href="/about" data-discover="true">{t('footer.g')}</a>
         <a className="hover:underline hover:text-secondary underline-offset-4" href="/services" data-discover="true">{t('Navbar.services')}</a>
         </div>
       

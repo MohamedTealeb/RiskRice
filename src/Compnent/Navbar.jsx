@@ -40,15 +40,15 @@ window.document.dir =i18n.dir()
          </a>
         
        
-        <ul className="hidden md:flex  mx-auto  font-semibold   gap-5 ">
+        <ul className="hidden md:flex  mx-auto cursor-pointer font-semibold   gap-5 ">
         <li>
-                <a className={`text-md font-bold duration-300 ${location.pathname === '/home' ? 'text-secondary  underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4`} to="/home">{t('Navbar.home')}</a>
+                <a className={`text-md font-bold duration-300 ${location.pathname === '/home' ? 'text-secondary  underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4`} href="/home">{t('Navbar.home')}</a>
               </li>
               <li>
-                <a className={`text-md font-bold duration-300 ${location.pathname === '/services' ? 'text-secondary underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4 gap-2`} to="/services">{t('Navbar.services')}</a>
+                <a className={`text-md font-bold duration-300 ${location.pathname === '/services' ? 'text-secondary underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4 gap-2`} href="/services">{t('Navbar.services')}</a>
               </li>
           <li>
-                <a className={`text-md font-bold duration-300 ${location.pathname === '/about' ? 'text-secondary underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4`} to="/about">{t('Navbar.about')}</a>
+                <a className={`text-md font-bold duration-300 ${location.pathname === '/about' ? 'text-secondary underline' : 'text-white'} hover:underline hover:text-secondary underline-offset-4`} href="/about">{t('Navbar.about')}</a>
               </li>
           
          
