@@ -29,13 +29,13 @@ window.document.dir =i18n.dir()
   return <>
    <Helmet>
   <title>RiskRice</title>
-  <a rel="shortcut icon" href={logo} type="image/svg+xml" />
+  <link rel="shortcut icon" href={logo} type="image/svg+xml" />
 </Helmet>
   <section className="relative mx-auto  bg-primary ">
     
     <nav className="flex justify-around  w-screen overflow-hidden">
       <div className="px-5 xl:px-12 py-6 flex w-full  items-center">
-        <a className="text-3xl font-bold font-heading" href="#">
+        <a className="text-3xl font-bold font-heading" href="/">
          <img className="h-9" src={logo} alt="logo"/>
          </a>
        
@@ -68,17 +68,17 @@ window.document.dir =i18n.dir()
       
       
       {(i18n.language === 'en') ? (
-          <a className="navbar-burger self-center mr-12 md:hidden xl:hidden" onClick={toggleNavbar} href="#">
+          <Link className="navbar-burger self-center mr-12 md:hidden xl:hidden" onClick={toggleNavbar} to="#">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
-          </a>
+          </Link>
       ) : (
-          <a className="navbar-burger self-center m-10 md:hidden xl:hidden" onClick={toggleNavbar} href="#">
+          <Link className="navbar-burger self-center m-10 md:hidden xl:hidden" onClick={toggleNavbar} to="#">
               <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
               </svg>
-          </a>
+          </Link>
       )}
       
     
@@ -87,8 +87,8 @@ window.document.dir =i18n.dir()
                 <div className="absolute text-center top-16 left-0 w-full bg-primary text-white md:hidden">
                   
                     <Link to="/" className="block font-medium text-lg px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.home')}</Link>
-                    <link to="/services" className="block font-medium  px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.services')}</link>
-                    <link to="/about" className="block font-medium px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.about')}</link>
+                    <Link to="/services" className="block font-medium  px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.services')}</Link>
+                    <Link to="/about" className="block font-medium px-4 py-2 hover:bg-gray-700" onClick={() => setIsOpen(false)}>{t('Navbar.about')}</Link>
                    
                    <div class="p-4 flex items-center   hover:bg-gray-700 justify-center space-x-2">
                     

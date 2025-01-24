@@ -7,6 +7,7 @@ import Footer from '../../Compnent/Footer';
 import { useTranslation } from 'react-i18next';
 import { Helmet } from 'react-helmet';
 import logo from './../../assets/logo-DHkhB3YR.png' 
+import { Link } from 'react-router-dom';
 
 
 
@@ -34,7 +35,7 @@ export default function Home() {
              {t('home.ee')} <br/> {t('home.aa')}</h1>} 
        <p className="mt-8 text-lg  text-[#B6B6B6]">{t('home.a')}</p>
        <p className="text-lg text-[#B6B6B6] ">{t('home.b')}</p>
-       <a className="bg-secondary text-center font-bold mt-8 py-2 rounded-md lg:w-1/2 w-3/4 text-black" href="/contact" data-discover="true">{t('home.c')}</a>
+       <a className="bg-secondary text-center font-bold mt-8 py-2 rounded-md lg:w-1/2 w-3/4 text-black" to="/contact" data-discover="true">{t('home.c')}</a>
        </div><div className="flex items-center justify-center lg:w-1/2 ">
        <img src={photo} alt="Hero" className="w-full rounded-full"/></div>
        </div>
@@ -129,7 +130,7 @@ export default function Home() {
       <span class="font-bold">{t('home.o')} </span> 
       {t('home.p')}</p>
        <p class="text-md leading-8 font-semibold text-[#333]">{t('home.i')} <span class="font-bold mx-1">{t('home.u')}  </span>{t('home.y')}</p>
-       <a href="/about" className='text-primary font-semibold'>{t('home.m')}</a>
+       <Link to="/about" className='text-primary font-semibold'>{t('home.m')}</Link>
     </div>
 
    </div>
