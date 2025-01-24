@@ -140,7 +140,7 @@ export default function Home() {
   <h1 className='lg:text-xl  font-bold text-center'>
   {t('home.w')}</h1>
   <p className='text-center lg:block hidden'>{t('home.s')}</p>
-  <p class="text-center lg:hidden flex"> Get expert insights and proven strategies to help your startup succeed</p>
+  <p class="text-center lg:hidden flex">{t('home.s')} </p>
   <div className='flex w-full justify-center'>
   <input class="py-1 border border-secondary rounded-tl-lg lg:w-1/2 w-2/3 rounded-bl-lg outline-none px-2 text-black" placeholder={t('home.t')}/>
   <button class="rounded-tr-lg text-sm rounded-br-lg bg-secondary text-black py-2 px-4 font-semibold">{t('home.q')}</button>
