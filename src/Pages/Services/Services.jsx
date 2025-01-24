@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom';
 
 
 
@@ -144,7 +145,7 @@ export default function Services() {
       
         </div>
         <div className="flex justify-center items-center my-4">
-                <a className="bg-secondary py-2 lg:w-1/4 w-1/2 px-1 rounded-lg text-center font-semibold" href="/contact" data-discover="true">{t('services.aw')}</a>
+                <Link className="bg-secondary py-2 lg:w-1/4 w-1/2 px-1 rounded-lg text-center font-semibold" to="/contact" data-discover="true">{t('services.aw')}</Link>
             </div>
 
             <div className="flex flex-col justify-center items-center space-y-4">
