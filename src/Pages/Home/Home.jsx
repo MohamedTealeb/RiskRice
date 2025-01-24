@@ -35,7 +35,7 @@ export default function Home() {
              {t('home.ee')} <br/> {t('home.aa')}</h1>} 
        <p className="mt-8 text-lg  text-[#B6B6B6]">{t('home.a')}</p>
        <p className="text-lg text-[#B6B6B6] ">{t('home.b')}</p>
-       <a className="bg-secondary text-center font-bold mt-8 py-2 rounded-md lg:w-1/2 w-3/4 text-black" to="/contact" data-discover="true">{t('home.c')}</a>
+       <Link className="bg-secondary text-center font-bold mt-8 py-2 rounded-md lg:w-1/2 w-3/4 text-black" to="/contact" data-discover="true">{t('home.c')}</Link>
        </div><div className="flex items-center justify-center lg:w-1/2 ">
        <img src={photo} alt="Hero" className="w-full rounded-full"/></div>
        </div>
@@ -88,7 +88,7 @@ export default function Home() {
     </svg>
     <h2 className="font-bold lg:text-xl text-md">{t('footer.b')}</h2>
     <p className="font-medium lg:text-md  text-sm">{t('home.n')}</p>
-    <a rel="noopener noreferrer" className="hover:underline underline-offset-1 text-primary font-semibold" href="/services" data-discover="true">{t('home.m')}</a>
+    <Link rel="noopener noreferrer" className="hover:underline underline-offset-1 text-primary font-semibold" to="/services" data-discover="true">{t('home.m')}</Link>
     <div className="absolute inset-0 border-2 border-secondary opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
   </div>
   <div class="card  bg-[#eee] border border-secondary rounded-lg hover:cursor-pointer px-4 py-4 transition-all duration-300 ease-in-out hover:shadow-lg  flex flex-col space-y-2 items-start relative overflow-hidden">
@@ -97,7 +97,7 @@ export default function Home() {
     </svg>
     <h2 class="font-bold lg:text-xl text-md">{t('footer.c')}</h2>
     <p class="font-medium lg:text-md text-sm">{t('home.z')}</p>
-    <a rel="noopener noreferrer" class="hover:underline underline-offset-1  text-primary font-semibold" href="/services" data-discover="true">{t('home.m')}</a>
+    <Link rel="noopener noreferrer" class="hover:underline underline-offset-1  text-primary font-semibold" to="/services" data-discover="true">{t('home.m')}</Link>
     <div class="absolute inset-0 border-2 border-secondary opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none">
     </div></div>
   <div className="card bg-[#eee] border border-secondary rounded-lg hover:cursor-pointer px-4 py-4 transition-all duration-300 ease-in-out hover:shadow-lg flex flex-col space-y-2 items-start relative overflow-hidden">
@@ -105,7 +105,7 @@ export default function Home() {
     </path></svg>
     <h2 className="font-bold lg:text-xl text-md">{t('footer.d')}</h2>
     <p className="font-medium lg:text-md text-sm">{t('home.x')}</p>
-    <a rel="noopener noreferrer" className="hover:underline underline-offset-1 text-primary font-semibold" href="/services" data-discover="true">{t('home.m')}</a>
+    <Link rel="noopener noreferrer" className="hover:underline underline-offset-1 text-primary font-semibold" to="/services" data-discover="true">{t('home.m')}</Link>
     <div className="absolute inset-0 border-2 border-secondary opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none"></div>
   </div>
   <div class="card  bg-[#eee] border border-secondary rounded-lg hover:cursor-pointer px-4 py-4 transition-all duration-300 ease-in-out hover:shadow-lg  flex flex-col space-y-2 items-start relative overflow-hidden"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge text-primary my-2 w-8 h-8" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="HandshakeIcon">
@@ -114,7 +114,7 @@ export default function Home() {
   </svg>
   <h2 class="font-bold lg:text-xl text-md">{t('footer.e')}</h2>
   <p class="font-medium lg:text-md text-sm">{t('home.v')}</p>
-  <a rel="noopener noreferrer" class="hover:underline underline-offset-1  text-primary font-semibold" href="/services" data-discover="true">{t('home.m')}</a>
+  <Link rel="noopener noreferrer" class="hover:underline underline-offset-1  text-primary font-semibold" to="/services" data-discover="true">{t('home.m')}</Link>
   <div class="absolute inset-0 border-2 border-secondary opacity-0 hover:opacity-100 transition-opacity duration-300 pointer-events-none">
     </div></div>
 </div> 
